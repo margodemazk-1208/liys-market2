@@ -286,7 +286,7 @@ class ProductController extends Controller
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
-                'image' => asset('asset/img/products/remini.png'),
+                'image' => asset('asset/img/products/Remini.png'),
                 'variants' => [
                     ['name' => 'Sharing 7 Hari', 'price' => 'Rp 5.000'],
                 ]
