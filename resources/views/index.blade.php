@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liy's Market | Solusi Kebutuhan Digital Premium</title>
-    <link rel="icon" type="image/png" href="{{ asset('asset/img/logo/favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('asset/img/logo/favicon.png') }}?v=1">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -90,20 +90,29 @@
             background: var(--primary-lavender);
             border-radius: 10px;
         }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
 
     <nav class="sticky top-0 z-50 glass-nav border-b border-purple-50">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
-            <div class="text-2xl font-bold italic" style="color: var(--primary-lavender);">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-bold italic" style="color: var(--primary-lavender);">
                 Liy's <span style="color: var(--neutral-grey);">Market</span>
             </div>
-            <div class="hidden md:flex space-x-8 text-sm font-semibold">
+            <div class="flex space-x-4 md:space-x-8 text-[10px] md:text-sm font-semibold">
                 <a href="#" id="nav-home" class="nav-link pb-1 transition-all duration-300">Home</a>
                 <a href="#product-list" id="nav-product" class="nav-link pb-1 transition-all duration-300 text-slate-500 hover:text-purple-400">Price List</a>
-                <a href="#contact-support" id="nav-contact" class="nav-link pb-1 transition-all duration-300 text-slate-500 hover:text-purple-400">Contact & Support</a>
+                <a href="#contact-support" id="nav-contact" class="nav-link pb-1 transition-all duration-300 text-slate-500 hover:text-purple-400">Support</a>
             </div>
         </div>
     </nav>
@@ -126,12 +135,12 @@
         </div>
     </header>
 
-    <div class="max-w-6xl mx-auto px-6 mb-12 flex justify-center">
-        <div class="flex bg-white p-2 rounded-2xl shadow-sm border inline-flex" style="border-color: var(--neutral-grey);">
-            <button onclick="filterProduct('All', this)" class="category-btn px-8 py-3 rounded-xl font-bold text-sm tab-active">All</button>
-            <button onclick="filterProduct('Top Up Game', this)" class="category-btn px-8 py-3 rounded-xl font-bold text-sm text-slate-400 hover:bg-slate-50 transition">Games</button>
-            <button onclick="filterProduct('Streaming', this)" class="category-btn px-8 py-3 rounded-xl font-bold text-sm text-slate-400 hover:bg-slate-50 transition">Streaming Apps</button>
-            <button onclick="filterProduct('Editor Apps', this)" class="category-btn px-8 py-3 rounded-xl font-bold text-sm text-slate-400 hover:bg-slate-50 transition">Editor Apps</button>
+    <div class="max-w6xl mx-auto px-6 mb-12 flex justify-center">
+        <div class="flex bg-white p-2 rounded-2xl shadow-sm border overflow-x-auto whitespace-nowrap max-w-full no-scrollbar" style="border-color: var(--neutral-grey);">
+            <button onclick="filterProduct('All', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm tab-active">All</button>
+            <button onclick="filterProduct('Top Up Game', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Games</button>
+            <button onclick="filterProduct('Streaming', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Streaming</button>
+            <button onclick="filterProduct('Editor Apps', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Editors</button>
         </div>
     </div>
 
@@ -173,16 +182,22 @@
                 <form id="whatsappForm" onsubmit="sendToWhatsapp(event)">
                     <input type="hidden" id="productName">
 
-                    <div class="mb-6">
-                        <label id="inputLabel" class="block text-sm font-bold text-slate-700 mb-3">Masukkan User ID</label>
-                        <div class="flex gap-3">
-                            <input type="text" id="userID" required
-                                class="flex-1 px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-300 focus:bg-white transition"
-                                placeholder="Masukkan data...">
+                    <div class="relative bg-white w-full max-w-lg rounded-[2.5rem] overflow-hidden transform transition-all border border-white flex flex-col max-h-[90vh]">
+                        <div class="p-6 md:p-8 overflow-y-auto">
+                            <form id="whatsappForm" onsubmit="sendToWhatsapp(event)" class="pb-20">
+                                <div class="mb-6">
+                                    <label id="inputLabel" class="block text-sm font-bold text-slate-700 mb-3">Masukkan User ID</label>
+                                    <div class="flex flex-col md:flex-row gap-3">
+                                        <input type="text" id="userID" required
+                                            class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-300 focus:bg-white transition"
+                                            placeholder="Masukkan data...">
 
-                            <input type="text" id="zoneID"
-                                class="hidden w-1/3 px-5 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-300 focus:bg-white transition"
-                                placeholder="Zone">
+                                        <input type="text" id="zoneID"
+                                            class="hidden w-full md:w-1/3 px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-300 focus:bg-white transition"
+                                            placeholder="Zone">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
 
@@ -301,7 +316,7 @@
 
             document.getElementById('modalTitle').innerText = "Pesan " + name;
             document.getElementById('productName').value = name;
-            document.getElementById('inputLabel').innerText = isDouble ? `${label} & ${label2}`: label;
+            document.getElementById('inputLabel').innerText = isDouble ? `${label} & ${label2}` : label;
 
             const input2 = document.getElementById('zoneID');
             if (isDouble) {
@@ -310,8 +325,8 @@
                 input2.placeholder = label2;
             } else {
                 input2.classList.add('hidden');
-        input2.removeAttribute('required');
-    }
+                input2.removeAttribute('required');
+            }
 
             const variantContainer = document.getElementById('variantContainer');
             variantContainer.innerHTML = '';
