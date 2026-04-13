@@ -184,20 +184,20 @@
 
                     <div class="relative bg-white w-full max-w-lg rounded-[2.5rem] overflow-hidden transform transition-all border border-white flex flex-col max-h-[90vh]">
                         <div class="p-6 md:p-8 overflow-y-auto">
-                            <form id="whatsappForm" onsubmit="sendToWhatsapp(event)" class="pb-20">
+                            <div class="pb-20">
                                 <div class="mb-6">
                                     <label id="inputLabel" class="block text-sm font-bold text-slate-700 mb-3">Masukkan User ID</label>
-                                    <div class="flex flex-col md:flex-row gap-3">
+                                    <div class="flex flex-col gap-3">
                                         <input type="text" id="userID" required
                                             class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-300 focus:bg-white transition"
                                             placeholder="Masukkan data...">
 
                                         <input type="text" id="zoneID"
-                                            class="hidden w-full md:w-1/3 px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-300 focus:bg-white transition"
+                                            class="hidden w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-300 focus:bg-white transition"
                                             placeholder="Zone">
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
 
@@ -208,7 +208,7 @@
                     </div>
 
                     <button type="submit"
-                        class="w-full py-5 bg-soft-gradient text-white font-bold rounded-[1.5rem] shadow-xl flex items-center justify-center space-x-3 hover:opacity-90 transition sticky bottom-0 bg-white">
+                        class="w-full py-5 bg-soft-gradient text-white font-bold rounded-[1.5rem] shadow-xl flex items-center justify-center space-x-3 hover:opacity-90 transition bottom-0 bg-white">
                         <span>Order Sekarang</span>
                     </button>
                 </form>
