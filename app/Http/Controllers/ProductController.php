@@ -294,7 +294,7 @@ class ProductController extends Controller
             [
                 'id' => 20,
                 'name' => 'Chatgpt Plus', 
-                'category' => 'Streaming',
+                'category' => 'AI',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
@@ -307,7 +307,7 @@ class ProductController extends Controller
             [
                 'id' => 21,
                 'name' => 'Gemini Pro', 
-                'category' => 'Streaming',
+                'category' => 'AI',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
@@ -375,11 +375,11 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 24, // Sesuaikan dengan urutan ID di database kamu
+                'id' => 24,
                 'name' => 'PUBG Mobile',
                 'category' => 'Top Up Game',
                 'is_double' => false,
-                'input_label' => 'ID Karakter',
+                'input_label' => 'Player ID',
                 'input_label2' => null,
                 'image' => asset('asset/img/products/pubg.jpg'),
                 'variants' => [
@@ -413,7 +413,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 25, // Sesuaikan lagi ya ID-nya
+                'id' => 25, 
                 'name' => 'Free Fire Indo',
                 'category' => 'Top Up Game',
                 'is_double' => false,
@@ -446,7 +446,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 26, // Lanjutin urutan ID kamu ya
+                'id' => 26, 
                 'name' => 'Genshin Impact',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -468,7 +468,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 27, // Lanjutin ID-nya ya
+                'id' => 27, 
                 'name' => 'MLBB Region Malaysia',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -529,7 +529,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 29, // Sesuaikan lagi urutan ID-nya ya
+                'id' => 29, 
                 'name' => 'MLBB Region Philippines',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -551,7 +551,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 30, // Lanjutin urutan ID-nya ya
+                'id' => 30, 
                 'name' => 'MLBB Region Singapore',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -582,7 +582,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 31, // Lanjutin urutan ID project kamu ya
+                'id' => 31, 
                 'name' => 'MLBB Region Global',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -610,6 +610,19 @@ class ProductController extends Controller
                     ['name' => '9288 Diamonds', 'price' => 'Rp 1.950.000'],
                     //WeeklyPass
                     ['name' => 'Weekly Pass', 'price' => 'Rp 25.000'],
+                ]
+            ],
+            [
+                'id' => 32, 
+                'name' => 'MLBB Region Russia',
+                'category' => 'Top Up Game',
+                'is_double' => true,
+                'input_label' => 'User ID',
+                'input_label2' => 'Zone ID',
+                'image' => asset('asset/img/products/ml.jpg'),
+                'variants' => [
+                    //WeeklyPass
+                    ['name' => 'Weekly Pass', 'price' => 'Rp 36.000'],
                 ]
             ],
 

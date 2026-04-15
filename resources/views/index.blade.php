@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liy's Market | Solusi Kebutuhan Digital Premium</title>
-    <link rel="icon" type="image/png" href="{{ asset('asset/img/logo/favicon.png') }}?v=1">
+    <link rel="icon" type="image/x-icon" href="{{ asset('asset/img/logo/favicon.ico') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -141,6 +141,8 @@
             <button onclick="filterProduct('Top Up Game', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Games</button>
             <button onclick="filterProduct('Streaming', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Streaming</button>
             <button onclick="filterProduct('Editor Apps', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Editors</button>
+            <button onclick="filterProduct('AI', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">AI Apps</button>
+            <button onclick="filterProduct('Sosial Media', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Sosial Media</button>
         </div>
     </div>
 
@@ -182,15 +184,15 @@
                 <form id="whatsappForm" onsubmit="sendToWhatsapp(event)">
                     <input type="hidden" id="productName">
 
-                    <div class="relative bg-white w-full max-w-lg rounded-[2.5rem] overflow-hidden transform transition-all border border-white flex flex-col max-h-[90vh]">
+                    <div class="relative bg-white w-full max-w-lg rounded-[2.5rem] overflow-hidden transform transition-all border border-white flex flex-col max-h-[60vh]">
                         <div class="p-6 md:p-8 overflow-y-auto">
-                            <div class="pb-20">
-                                <div class="mb-6">
+                            <div class="pb-5">
+                                <div class="mb-1">
                                     <label id="inputLabel" class="block text-sm font-bold text-slate-700 mb-3">Masukkan User ID</label>
                                     <div class="flex flex-col gap-3">
                                         <input type="text" id="userID" required
                                             class="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-300 focus:bg-white transition"
-                                            placeholder="Masukkan data...">
+                                            placeholder="Username">
 
                                         <input type="text" id="zoneID"
                                             class="hidden w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-300 focus:bg-white transition"
@@ -220,13 +222,12 @@
         <div class="flex flex-col items-center space-y-6">
             <h4 class="font-bold text-slate-800 text-xl pb-2 px-8" style="border-bottom: 2px solid var(--detail-violet);">Contact & Support</h4>
             <div class="space-y-2 text-slate-500 text-sm font-medium">
-                <p> 08xx-xxxx-xxxx</p>
+                <p> 0877-9220-0900</p>
                 <p> Jam Operasional: 09.00 - 21.00 WIB</p>
             </div>
             <div class="flex space-x-4">
-                <a href="#" class="w-24 h-10 rounded-xl flex items-center justify-center text-sm font-semibold status-badge">Instagram</a>
-                <a href="#" class="w-24 h-10 rounded-xl flex items-center justify-center text-sm font-semibold status-badge">Facebook</a>
-                <a href="#" class="w-24 h-10 rounded-xl flex items-center justify-center text-sm font-semibold status-badge">Twitter</a>
+                <a href="https://t.me/liysmarkett" target="_blank" class="w-24 h-10 rounded-xl flex items-center justify-center text-sm font-semibold status-badge">Telegram</a>
+                <a href="https://tiktok.com/@liysmarkett" target="_blank" class="w-24 h-10 rounded-xl flex items-center justify-center text-sm font-semibold status-badge">Tiktok</a>
             </div>
         </div>
     </div>
@@ -310,13 +311,17 @@
         function openOrder(el) {
             const name = el.dataset.name;
             const label = el.dataset.label;
-            const isDouble = el.dataset.is_double === "1"; // Cek apa butuh double input
+            const isDouble = el.dataset.is_double === "1";
             const label2 = el.dataset.label2 || "";
             const variants = JSON.parse(el.dataset.variants);
+
+            const input1 = document.getElementById('userID');
+            input1.placeholder = label;
 
             document.getElementById('modalTitle').innerText = "Pesan " + name;
             document.getElementById('productName').value = name;
             document.getElementById('inputLabel').innerText = isDouble ? `${label} & ${label2}` : label;
+
 
             const input2 = document.getElementById('zoneID');
             if (isDouble) {
@@ -368,7 +373,7 @@
             if (!nominal) return alert("Pilih nominal dulu!");
 
             const message = `Halo Admin Liy's Market! 💜%0A%0ASaya mau order layanan digital:%0A--------------------------------%0A*Produk* : ${product}%0A*Nominal*: ${nominal}%0A*Data ID*: ${fullID}%0A--------------------------------%0AMohon info instruksi pembayarannya ya!`;
-            window.open(`https://wa.me/628814507348?text=${message}`, '_blank');
+            window.open(`https://wa.me/6287792200900?text=${message}`, '_blank');
         }
 
         // SMOOTH SCROLL (Diluar fungsi lain)
