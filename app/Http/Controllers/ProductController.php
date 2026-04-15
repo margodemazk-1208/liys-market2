@@ -340,7 +340,7 @@ class ProductController extends Controller
                 'is_double' => true,
                 'input_label' => 'User ID',
                 'input_label2' => 'Zone ID',
-                'image' => asset('asset/img/products/ml.jpg'),
+                'image' => asset('asset/img/products/ml-ind.png'),
                 'variants' => [
                     ['name' => '5 Diamonds', 'price' => 'Rp 1.500'],
                     ['name' => '10 Diamonds (9 + 1 Bonus)', 'price' => 'Rp 3.000'],
@@ -449,8 +449,8 @@ class ProductController extends Controller
                 'id' => 26, 
                 'name' => 'Genshin Impact',
                 'category' => 'Top Up Game',
-                'is_double' => true,
-                'input_label' => 'UID',
+                'is_double' => false,
+                'input_label' => 'Player ID',
                 'input_label2' => 'Server',
                 'image' => asset('asset/img/products/genshin.jpg'),
                 'variants' => [
@@ -474,7 +474,7 @@ class ProductController extends Controller
                 'is_double' => true,
                 'input_label' => 'User ID',
                 'input_label2' => 'Zone ID',
-                'image' => asset('asset/img/products/ml.jpg'),
+                'image' => asset('asset/img/products/ml-my.png'),
                 'variants' => [
                     ['name' => '14 Diamonds', 'price' => 'Rp 5.000'],
                     ['name' => '70 Diamonds', 'price' => 'Rp 21.200'],
@@ -504,7 +504,7 @@ class ProductController extends Controller
                 'is_double' => true,
                 'input_label' => 'User ID',
                 'input_label2' => 'Zone ID',
-                'image' => asset('asset/img/products/ml.jpg'),
+                'image' => asset('asset/img/products/ml-br.png'),
                 'variants' => [
                     ['name' => '86 Diamonds', 'price' => 'Rp 19.000'],
                     ['name' => '172 Diamonds', 'price' => 'Rp 36.000'],
@@ -535,7 +535,7 @@ class ProductController extends Controller
                 'is_double' => true,
                 'input_label' => 'User ID',
                 'input_label2' => 'Zone ID',
-                'image' => asset('asset/img/products/ml.jpg'),
+                'image' => asset('asset/img/products/ml-ph.png'),
                 'variants' => [
                     ['name' => '5 Diamonds', 'price' => 'Rp 2.000'],
                     ['name' => '56 Diamonds', 'price' => 'Rp 14.200'],
@@ -557,7 +557,7 @@ class ProductController extends Controller
                 'is_double' => true,
                 'input_label' => 'User ID',
                 'input_label2' => 'Zone ID',
-                'image' => asset('asset/img/products/ml.jpg'),
+                'image' => asset('asset/img/products/ml-sg.png'),
                 'variants' => [
                     ['name' => '14 Diamonds', 'price' => 'Rp 4.500'],
                     ['name' => '56 Diamonds', 'price' => 'Rp 17.000'],
@@ -619,13 +619,123 @@ class ProductController extends Controller
                 'is_double' => true,
                 'input_label' => 'User ID',
                 'input_label2' => 'Zone ID',
-                'image' => asset('asset/img/products/ml.jpg'),
+                'image' => asset('asset/img/products/ml-rs.png'),
                 'variants' => [
                     //WeeklyPass
                     ['name' => 'Weekly Pass', 'price' => 'Rp 36.000'],
                 ]
             ],
+            [
+                'id' => 33, 
+                'name' => 'TikTok',
+                'category' => 'Sosial Media',
+                'is_double' => false,
+                'input_label' => 'Link Video / Username',
+                'input_label2' => null,
+                'image' => asset('asset/img/products/tiktok2.png'),
+                'variants' => [
+                    // UP-FOLLS WEB
+                    ['name' => '100 Follows (Web)', 'price' => 'Rp 6.000'],
+                    ['name' => '200 Follows (Web)', 'price' => 'Rp 12.000'],
+                    ['name' => '300 Follows (Web)', 'price' => 'Rp 18.000'],
+                    ['name' => '400 Follows (Web)', 'price' => 'Rp 24.000'],
+                    ['name' => '500 Follows (Web)', 'price' => 'Rp 30.000'],
 
+                    // UP-FOLLS INDO WEB
+                    ['name' => '100 Follows Indo (Web)', 'price' => 'Rp 10.000'],
+                    ['name' => '200 Follows Indo (Web)', 'price' => 'Rp 20.000'],
+                    ['name' => '300 Follows Indo (Web)', 'price' => 'Rp 30.000'],
+                    ['name' => '400 Follows Indo (Web)', 'price' => 'Rp 40.000'],
+                    ['name' => '500 Follows Indo (Web)', 'price' => 'Rp 50.000'],
+
+                    // UP-LIKE BOT MIX
+                    ['name' => '100 Likes Bot Mix', 'price' => 'Rp 1.000'],
+                    ['name' => '200 Likes Bot Mix', 'price' => 'Rp 2.000'],
+                    ['name' => '300 Likes Bot Mix', 'price' => 'Rp 3.000'],
+                    ['name' => '400 Likes Bot Mix', 'price' => 'Rp 4.000'],
+                    ['name' => '500 Likes Bot Mix', 'price' => 'Rp 5.000'],
+
+                    // UP-LIKE INDO WEB
+                    ['name' => '100 Likes Indo (Web)', 'price' => 'Rp 5.000'],
+                    ['name' => '200 Likes Indo (Web)', 'price' => 'Rp 10.000'],
+                    ['name' => '300 Likes Indo (Web)', 'price' => 'Rp 15.000'],
+                    ['name' => '400 Likes Indo (Web)', 'price' => 'Rp 20.000'],
+                    ['name' => '500 Likes Indo (Web)', 'price' => 'Rp 25.000'],
+
+                    // UP-VIEW WEB
+                    ['name' => '1.000 Views (Web)', 'price' => 'Rp 1.000'],
+                    ['name' => '2.000 Views (Web)', 'price' => 'Rp 2.000'],
+                    ['name' => '3.000 Views (Web)', 'price' => 'Rp 3.000'],
+                    ['name' => '4.000 Views (Web)', 'price' => 'Rp 4.000'],
+                    ['name' => '5.000 Views (Web)', 'price' => 'Rp 5.000'],
+
+                    // UP-COMMENT INDO
+                    ['name' => '10 Komentar Indo', 'price' => 'Rp 5.000'],
+                    ['name' => '100 Komentar Indo', 'price' => 'Rp 50.000'],
+                    ['name' => '300 Komentar Indo', 'price' => 'Rp 150.000'],
+                    ['name' => '400 Komentar Indo', 'price' => 'Rp 200.000'],
+                    ['name' => '500 Komentar Indo', 'price' => 'Rp 250.000'],
+                ]
+            ],
+            [
+                'id' => 34, // Lanjutin urutan ID project kamu
+                'name' => 'Instagram',
+                'category' => 'Sosial Media',
+                'is_double' => false,
+                'input_label' => 'Username / Link Post / Link Story',
+                'input_label2' => null,
+                'image' => asset('asset/img/products/instagram.png'),
+                'variants' => [
+                    // UP-FOLLS WEB
+                    ['name' => '100 Follows (Web)', 'price' => 'Rp 5.000'],
+                    ['name' => '200 Follows (Web)', 'price' => 'Rp 10.000'],
+                    ['name' => '300 Follows (Web)', 'price' => 'Rp 15.000'],
+                    ['name' => '400 Follows (Web)', 'price' => 'Rp 20.000'],
+                    ['name' => '500 Follows (Web)', 'price' => 'Rp 25.000'],
+
+                    // UP-FOLLS INDO WEB
+                    ['name' => '100 Follows Indo (Web)', 'price' => 'Rp 6.000'],
+                    ['name' => '200 Follows Indo (Web)', 'price' => 'Rp 12.000'],
+                    ['name' => '300 Follows Indo (Web)', 'price' => 'Rp 18.000'],
+                    ['name' => '400 Follows Indo (Web)', 'price' => 'Rp 24.000'],
+                    ['name' => '500 Follows Indo (Web)', 'price' => 'Rp 30.000'],
+
+                    // UP-LIKE BOT WEB
+                    ['name' => '100 Likes Bot (Web)', 'price' => 'Rp 2.000'],
+                    ['name' => '200 Likes Bot (Web)', 'price' => 'Rp 4.000'],
+                    ['name' => '300 Likes Bot (Web)', 'price' => 'Rp 6.000'],
+                    ['name' => '400 Likes Bot (Web)', 'price' => 'Rp 8.000'],
+                    ['name' => '500 Likes Bot (Web)', 'price' => 'Rp 10.000'],
+
+                    // UP-LIKE INDO WEB
+                    ['name' => '100 Likes Indo (Web)', 'price' => 'Rp 5.000'],
+                    ['name' => '200 Likes Indo (Web)', 'price' => 'Rp 10.000'],
+                    ['name' => '300 Likes Indo (Web)', 'price' => 'Rp 15.000'],
+                    ['name' => '400 Likes Indo (Web)', 'price' => 'Rp 20.000'],
+                    ['name' => '500 Likes Indo (Web)', 'price' => 'Rp 25.000'],
+
+                    // UP-VIEW STORY INDO
+                    ['name' => '100 Views Story Indo', 'price' => 'Rp 3.000'],
+                    ['name' => '200 Views Story Indo', 'price' => 'Rp 6.000'],
+                    ['name' => '300 Views Story Indo', 'price' => 'Rp 9.000'],
+                    ['name' => '400 Views Story Indo', 'price' => 'Rp 12.000'],
+                    ['name' => '500 Views Story Indo', 'price' => 'Rp 15.000'],
+
+                    // UP-VIEW REELS
+                    ['name' => '1.000 Views Reels', 'price' => 'Rp 1.000'],
+                    ['name' => '2.000 Views Reels', 'price' => 'Rp 2.000'],
+                    ['name' => '3.000 Views Reels', 'price' => 'Rp 3.000'],
+                    ['name' => '4.000 Views Reels', 'price' => 'Rp 4.000'],
+                    ['name' => '5.000 Views Reels', 'price' => 'Rp 5.000'],
+
+                    // UP-COMMENT INDO
+                    ['name' => '10 Komentar Indo', 'price' => 'Rp 5.000'],
+                    ['name' => '100 Komentar Indo', 'price' => 'Rp 50.000'],
+                    ['name' => '300 Komentar Indo', 'price' => 'Rp 150.000'],
+                    ['name' => '400 Komentar Indo', 'price' => 'Rp 200.000'],
+                    ['name' => '500 Komentar Indo', 'price' => 'Rp 250.000'],
+                ]
+            ]
         ];
 
         return view('index', compact('products'));

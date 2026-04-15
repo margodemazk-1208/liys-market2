@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liy's Market | Solusi Kebutuhan Digital Premium</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('asset/img/logo/favicon.ico') }}?v=1.1">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}?v=1.1">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -137,8 +137,8 @@
 
     <div class="max-w6xl mx-auto px-6 mb-12 flex justify-center">
         <div class="flex bg-white p-2 rounded-2xl shadow-sm border overflow-x-auto whitespace-nowrap max-w-full no-scrollbar" style="border-color: var(--neutral-grey);">
-            <button onclick="filterProduct('All', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm tab-active">All</button>
             <button onclick="filterProduct('Top Up Game', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Games</button>
+            <button onclick="filterProduct('Mobile Legends', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Mobile Legends</button>
             <button onclick="filterProduct('Streaming', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Streaming</button>
             <button onclick="filterProduct('Editor Apps', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Editors</button>
             <button onclick="filterProduct('AI', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">AI Apps</button>
@@ -300,7 +300,7 @@
             // Saring item
             const items = document.querySelectorAll('.product-item');
             items.forEach(item => {
-                if (category === 'All' || item.dataset.category === category) {
+                if (item.dataset.category === category) {
                     item.style.display = 'block';
                 } else {
                     item.style.display = 'none';
@@ -390,6 +390,14 @@
                     });
                 }
             });
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            // Cari tombol pertama (Games) terus simulasiin klik
+            const firstBtn = document.querySelector('.category-btn');
+            if (firstBtn) {
+                firstBtn.click();
+            }
         });
     </script>
 </body>
