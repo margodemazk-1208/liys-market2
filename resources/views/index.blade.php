@@ -141,8 +141,8 @@
             <button onclick="filterProduct('Mobile Legends', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Mobile Legends</button>
             <button onclick="filterProduct('Streaming', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Streaming</button>
             <button onclick="filterProduct('Editor Apps', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Editors</button>
-            <button onclick="filterProduct('AI', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">AI Apps</button>
-            <button onclick="filterProduct('Sosial Media', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Sosial Media</button>
+            <button onclick="filterProduct('Education Apps', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Education</button>
+            <button onclick="filterProduct('Sosial Media', this)" class="category-btn px-6 md:px-8 py-3 rounded-xl font-bold text-xs md:text-sm text-slate-400 hover:bg-slate-50 transition">Boosting Services</button>
         </div>
     </div>
 

@@ -19,45 +19,59 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/netflix.png'),
                 'variants' => [
-                    ['name' => '1p1u 1 Bulan', 'price' => 'Rp 32.000'],
+                    ['name' => '1p1u 1 Hari', 'price' => 'Rp 4.000'],
+                    ['name' => '1p1u 3 Hari', 'price' => 'Rp 7.000'],
+                    ['name' => '1p1u 7 Hari', 'price' => 'Rp 12.000'],
+                    ['name' => '1p1u 1 Bulan', 'price' => 'Rp 30.000'],
                     ['name' => '1p2u 1 Bulan', 'price' => 'Rp 17.000'],
-                    ['name' => 'Semi Private 1 Bulan', 'price' => 'Rp 37.000'],
+                    ['name' => 'Semi Private 1 Bulan', 'price' => 'Rp 35.000'],
                     ['name' => 'Private 1 Bulan', 'price' => 'Rp 150.000'],
                 ]
             ],
             [
                 'id' => 2,
-                'name' => 'WeTv Vip',
+                'name' => 'WeTV Vip',
                 'category' => 'Streaming',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/wetv.jpg'),
                 'variants' => [
-                    ['name' => 'Sharing 1 Bulan', 'price' => 'Rp 5.000'],
-                    ['name' => 'Private 1 Bulan', 'price' => 'Rp 20.000'],
+                    ['name' => '1 Bulan Sharing', 'price' => 'Rp 10.000'],
+                    ['name' => '2 Bulan Sharing', 'price' => 'Rp 15.000'],
+                    ['name' => '3 Bulan Sharing', 'price' => 'Rp 25.000'],
+                    ['name' => '1 Bulan Private', 'price' => 'Rp 28.000'],
                 ]
             ],
             [
                 'id' => 3,
-                'name' => 'V Merah Platinum',
+                'name' => 'Vidio Platinum & Ultimate',
                 'category' => 'Streaming',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/v.png'),
                 'variants' => [
-                    ['name' => 'Sharing 1 Bulan', 'price' => 'Rp 20.000'],
-                    ['name' => 'Private 1 Bulan', 'price' => 'Rp 35.000'],
+                    // Platinum
+                    ['name' => 'Platinum 1B (2 User)', 'price' => 'Rp 20.000'],
+                    ['name' => 'Platinum 1B Private', 'price' => 'Rp 35.000'],
+                    // Platinum Extra
+                    ['name' => 'Extra 1B All Dev', 'price' => 'Rp 65.000'],
+                    ['name' => 'Extra 1B Mobile', 'price' => 'Rp 45.000'],
+                    // Ultimate
+                    ['name' => 'Ultimate 1B All Dev', 'price' => 'Rp 155.000'],
+                    ['name' => 'Ultimate 1B Mobile', 'price' => 'Rp 87.000'],
+                    // Only TV
+                    ['name' => 'Only TV 1B Private', 'price' => 'Rp 15.000'],
                 ]
             ],
             [
                 'id' => 4,
-                'name' => 'Roblox Instant',
+                'name' => 'Roblox Instant (Via Login)',
                 'category' => 'Top Up Game',
                 'is_double' => true,
                 'input_label' => 'Username',
-                'input_label2' => 'ID Game Pass',
+                'input_label2' => 'Password',
                 'image' => asset('asset/img/products/roblox.png'),
                 'variants' => [
                     ['name' => '100 Robux', 'price' => 'Rp 10.500'],
@@ -78,7 +92,7 @@ class ProductController extends Controller
                 'category' => 'Top Up Game',
                 'is_double' => true,
                 'input_label' => 'Username',
-                'input_label2' => 'Password',
+                'input_label2' => 'ID Gamepass',
                 'image' => asset('asset/img/products/roblox.png'),
                 'variants' => [
                     ['name' => '80 Robux', 'price' => 'Rp 15.000'],
@@ -112,8 +126,11 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/viu.png'),
                 'variants' => [
-                    ['name' => 'Private 1 Tahun', 'price' => 'Rp 3.000'],
-                    ['name' => 'Private Lifetime', 'price' => 'Rp 6.000'],
+                    ['name' => '1 Bulan Private', 'price' => 'Rp 8.000'],
+                    ['name' => '2 Bulan Private', 'price' => 'Rp 11.000'],
+                    ['name' => '3 Bulan Private', 'price' => 'Rp 15.000'],
+                    ['name' => '6 Bulan Private', 'price' => 'Rp 18.000'],
+                    ['name' => '1 Tahun Private', 'price' => 'Rp 21.000'],
                 ]
             ],
             [
@@ -125,9 +142,11 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/prime.png'),
                 'variants' => [
-                    ['name' => 'Sharing 1 Bulan', 'price' => 'Rp 3.000'],
-                    ['name' => 'Private 1 Bulan', 'price' => 'Rp 7.000'],
-                    ['name' => 'Private 6 Bulan', 'price' => 'Rp 15.000'],
+                    ['name' => '1 Hari Share', 'price' => 'Rp 2.500'],
+                    ['name' => '3 Hari Share', 'price' => 'Rp 5.000'],
+                    ['name' => '7 Hari share', 'price' => 'Rp 7.000'],
+                    ['name' => '1 Bulan Share', 'price' => 'Rp 11.000'],
+                    ['name' => '1 Bulan Private', 'price' => 'Rp 18.000'],
                 ]
             ],
             [
@@ -139,24 +158,31 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/youtube2.png'),
                 'variants' => [
-                    ['name' => 'Family 1 Bulan', 'price' => 'Rp 3.000'],
-                    ['name' => 'Individual 1 Bulan', 'price' => 'Rp 10.000'],
+                    ['name' => 'Family 1 Bulan', 'price' => 'Rp 8.000'],
+                    ['name' => 'Family 2 Bulan', 'price' => 'Rp 13.000'],
+                    ['name' => 'Family 3 Bulan', 'price' => 'Rp 18.000'],
+                    ['name' => 'Family 4 Bulan', 'price' => 'Rp 23.000'],
+                    ['name' => 'Individual 1 Bulan', 'price' => 'Rp 12.000'],
                     ['name' => 'Individual 3 Bulan', 'price' => 'Rp 30.000'],
-                    ['name' => 'Mix 3 Bulan', 'price' => 'Rp 15.000'],
 
                 ]
             ],
             [
                 'id' => 9,
-                'name' => 'Iqiyi',
+                'name' => 'IQIYI VIP',
                 'category' => 'Streaming',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/iqiyi.jpg'),
                 'variants' => [
-                    ['name' => 'Sharing 1 Bulan', 'price' => 'Rp 3.000'],
-                    ['name' => 'Private 1 Bulan', 'price' => 'Rp 23.000'],
+                    ['name' => 'Sharing 1 Hari', 'price' => 'Rp 3.000'],
+                    ['name' => 'Sharing 3 Hari', 'price' => 'Rp 6.000'],
+                    ['name' => 'Sharing 7 Hari', 'price' => 'Rp 9.000'],
+                    ['name' => 'Sharing 1 Bulan', 'price' => 'Rp 11.000'],
+                    ['name' => 'Sharing 1 Bulan (Anti Limit)', 'price' => 'Rp 17.000'],
+                    ['name' => 'Private Standar  1 Bulan', 'price' => 'Rp 22.000'],
+                    ['name' => 'Private Premium 1 Bulan', 'price' => 'Rp 28.000'],
 
                 ]
             ],
@@ -169,9 +195,11 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/bstation.png'),
                 'variants' => [
-                    ['name' => 'Sharing 1 Bulan', 'price' => 'Rp 5.000'],
-                    ['name' => 'Private 1 Bulan', 'price' => 'Rp 30.000'],
-
+                    ['name' => '1 Hari Share', 'price' => 'Rp 2.500'],
+                    ['name' => '3 Hari Share', 'price' => 'Rp 5.000'],
+                    ['name' => '7 Hari share', 'price' => 'Rp 7.000'],
+                    ['name' => '1 Bulan Share', 'price' => 'Rp 11.000'],
+                    ['name' => '1 Bulan Private', 'price' => 'Rp 18.000'],
                 ]
             ],
             [
@@ -183,21 +211,25 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/hbomax.png'),
                 'variants' => [
-                    ['name' => 'Sharing 1 Bulan', 'price' => 'Rp 5.000'],
+                    ['name' => 'Sharing 1 Hari', 'price' => 'Rp 2.500'],
+                    ['name' => 'Sharing 3 Hari', 'price' => 'Rp 5.500'],
+                    ['name' => 'Sharing 7 Hari', 'price' => 'Rp 8.000'],
+                    ['name' => 'Sharing 1 Bulan 5 User', 'price' => 'Rp 13.500'],
+                    ['name' => 'Sharing 1 Bulan 3 User', 'price' => 'Rp 17.000'],
                     ['name' => 'Private 1 Bulan', 'price' => 'Rp 30.000'],
                 ]
             ],
             [
                 'id' => 12,
-                'name' => 'Spotify',
+                'name' => 'Spotify Premium',
                 'category' => 'Streaming',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/spotify.jpg'),
                 'variants' => [
-                    ['name' => 'Individual 1 Bulan', 'price' => 'Rp 18.000'],
-                    ['name' => 'Individual 3 Bulan', 'price' => 'Rp 35.000'],
+                    ['name' => '1 Bulan Famplan', 'price' => 'Rp 15.000'],
+                    ['name' => '1 Bulan Indplan', 'price' => 'Rp 18.000'],
                 ]
             ],
             [
@@ -209,8 +241,11 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/apple.png'),
                 'variants' => [
-                    ['name' => 'Imess 1 Bulan', 'price' => 'Rp 3.000'],
-                    ['name' => 'Individual 1 Bulan', 'price' => 'Rp 10.000'],
+                    ['name' => '1 Bulan Imess', 'price' => 'Rp 8.000'],
+                    ['name' => '2 Bulan Imess', 'price' => 'Rp 13.000'],
+                    ['name' => '3 Bulan Imess', 'price' => 'Rp 18.000'],
+                    ['name' => '4 Bulan Imess', 'price' => 'Rp 23.000'],
+                    ['name' => '1 Bulan Indplan', 'price' => 'Rp 15.000'],
                 ]
             ],
             [
@@ -222,11 +257,14 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/canva.png'),
                 'variants' => [
-                    ['name' => 'Pro 1 Bulan', 'price' => 'Rp 1.000'],
-                    ['name' => 'Pro 2 Bulan', 'price' => 'Rp 2.000'],
-                    ['name' => 'Pro 3 Bulan', 'price' => 'Rp 3.000'],
-                    ['name' => 'Pro 6 Bulan', 'price' => 'Rp 6.000'],
-                    ['name' => 'Pro 12 Bulan', 'price' => 'Rp 12.000'],
+                    ['name' => 'Pro 1 Hari', 'price' => 'Rp 2.000'],
+                    ['name' => 'Pro 3 Hari', 'price' => 'Rp 4.000'],
+                    ['name' => 'Pro 7 Hari', 'price' => 'Rp 6.000'],
+                    ['name' => 'Pro 1 Bulan', 'price' => 'Rp 10.000'],
+                    ['name' => 'Pro 2 Bulan', 'price' => 'Rp 12.000'],
+                    ['name' => 'Pro 3 Bulan', 'price' => 'Rp 15.000'],
+                    ['name' => 'Pro 6 Bulan', 'price' => 'Rp 18.000'],
+                    ['name' => 'Pro 12 Bulan', 'price' => 'Rp 22.000'],
                 ]
             ],
             [
@@ -238,7 +276,8 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/alightmotion.png'),
                 'variants' => [
-                    ['name' => 'Private 1 Tahun', 'price' => 'Rp 3.000'],
+                    ['name' => 'Sharing 1 Tahun', 'price' => '5.000'],
+                    ['name' => 'Private 1 Tahun', 'price' => 'Rp 10.000']
                 ]
             ],
             [
@@ -250,13 +289,13 @@ class ProductController extends Controller
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/capcut.png'),
                 'variants' => [
-                    ['name' => 'Private 7 Hari', 'price' => 'Rp 2.000'],
-                    ['name' => 'Private 1 Bulan', 'price' => 'Rp 5.000'],
+                    ['name' => 'Private 7 Hari', 'price' => 'Rp 5.000'],
+                    ['name' => 'Private 1 Bulan', 'price' => 'Rp 10.000'],
                 ]
             ],
             [
                 'id' => 17,
-                'name' => 'Wink Vip', 
+                'name' => 'Wink Vip',
                 'category' => 'Editor Apps',
                 'is_double' => true,
                 'input_label' => 'Nama',
@@ -268,7 +307,7 @@ class ProductController extends Controller
             ],
             [
                 'id' => 18,
-                'name' => 'Meitu Vip', 
+                'name' => 'Meitu Vip',
                 'category' => 'Editor Apps',
                 'is_double' => true,
                 'input_label' => 'Nama',
@@ -276,53 +315,55 @@ class ProductController extends Controller
                 'image' => asset('asset/img/products/meitu.png'),
                 'variants' => [
                     ['name' => 'Android 7 Hari', 'price' => 'Rp 5.000'],
-                    ['name' => 'Android 1 Bulan', 'price' => 'Rp 20.000'],
                 ]
             ],
             [
                 'id' => 19,
-                'name' => 'Remini Web', 
+                'name' => 'Remini Web',
                 'category' => 'Editor Apps',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/Remini.png'),
                 'variants' => [
-                    ['name' => 'Sharing 7 Hari', 'price' => 'Rp 5.000'],
+                    ['name' => 'Sharing 7 Hari Web', 'price' => 'Rp 7.000'],
                 ]
             ],
             [
                 'id' => 20,
-                'name' => 'Chatgpt Plus', 
-                'category' => 'AI',
+                'name' => 'Chatgpt',
+                'category' => 'Education Apps',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/chatgpt.jpg'),
                 'variants' => [
-                    ['name' => 'Sharing 1 Bulan', 'price' => 'Rp 7.000'],
-                    ['name' => 'Private 1 Bulan', 'price' => 'Rp 30.000'],
+                    ['name' => '1 Hari Member', 'price' => 'Rp 3.500'],
+                    ['name' => '3 Hari Member', 'price' => 'Rp 5.000'],
+                    ['name' => '7 Hari Member', 'price' => 'Rp 8.500'],
+                    ['name' => '1 Bulan Member', 'price' => 'Rp 23.000'],
+                    ['name' => '1 Bulan Private Plus', 'price' => 'Rp 30.000'],
                 ]
             ],
             [
                 'id' => 21,
-                'name' => 'Gemini Pro', 
-                'category' => 'AI',
+                'name' => 'Gemini AI',
+                'category' => 'Education Apps',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
                 'image' => asset('asset/img/products/gemini.png'),
                 'variants' => [
-                    ['name' => 'Family 1 Bulan', 'price' => 'Rp 5.000'],
-                    ['name' => 'Family 3 Bulan', 'price' => 'Rp 8.000'],
-                    ['name' => 'Private 1 Bulan', 'price' => 'Rp 20.000'],
-                    ['name' => 'Private 3 Bulan', 'price' => 'Rp 25.000'],
+                    ['name' => 'Family Plan 1 Bulan', 'price' => 'Rp 5.000'],
+                    ['name' => 'Family Plan 3 Bulan', 'price' => 'Rp 15.000'],
+                    ['name' => 'Family Plan 1 Tahun', 'price' => 'Rp 30.000'],
+                    ['name' => 'Head 1 Bulan', 'price' => 'Rp 20.000'],
                 ]
             ],
             [
                 'id' => 22,
-                'name' => 'Zoom Pro', 
-                'category' => 'Streaming',
+                'name' => 'Zoom Pro',
+                'category' => 'Education Apps',
                 'is_double' => true,
                 'input_label' => 'Nama',
                 'input_label2' => 'Nomor Telepon',
@@ -334,7 +375,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 23, 
+                'id' => 23,
                 'name' => 'Mobile Legends Region Indonesia',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -413,7 +454,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 25, 
+                'id' => 25,
                 'name' => 'Free Fire Indo',
                 'category' => 'Top Up Game',
                 'is_double' => false,
@@ -438,7 +479,7 @@ class ProductController extends Controller
                     ['name' => '2000 Diamonds', 'price' => 'Rp 260.000'],
                     ['name' => '2160 Diamonds', 'price' => 'Rp 280.000'],
                     ['name' => '2180 Diamonds', 'price' => 'Rp 283.000'],
-                    
+
                     // Membership Fast
                     ['name' => 'BP Card', 'price' => 'Rp 42.000'],
                     ['name' => 'Weekly Membership', 'price' => 'Rp 28.000'],
@@ -446,7 +487,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 26, 
+                'id' => 26,
                 'name' => 'Genshin Impact',
                 'category' => 'Top Up Game',
                 'is_double' => false,
@@ -460,7 +501,7 @@ class ProductController extends Controller
                     ['name' => '1090 Genesis Crystal', 'price' => 'Rp 172.300'],
                     ['name' => '2240 Genesis Crystal', 'price' => 'Rp 363.600'],
                     ['name' => '3880 Genesis Crystal', 'price' => 'Rp 589.300'],
-                    
+
                     // Membership Fast
                     ['name' => 'Blessing of the Welkin Moon', 'price' => 'Rp 56.000'],
                     ['name' => 'Blessing of the Welkin Moon x2', 'price' => 'Rp 112.000'],
@@ -468,7 +509,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 27, 
+                'id' => 27,
                 'name' => 'MLBB Region Malaysia',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -529,7 +570,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 29, 
+                'id' => 29,
                 'name' => 'MLBB Region Philippines',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -551,7 +592,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 30, 
+                'id' => 30,
                 'name' => 'MLBB Region Singapore',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -582,7 +623,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 31, 
+                'id' => 31,
                 'name' => 'MLBB Region Global',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -613,7 +654,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 32, 
+                'id' => 32,
                 'name' => 'MLBB Region Russia',
                 'category' => 'Top Up Game',
                 'is_double' => true,
@@ -626,7 +667,7 @@ class ProductController extends Controller
                 ]
             ],
             [
-                'id' => 33, 
+                'id' => 33,
                 'name' => 'TikTok',
                 'category' => 'Sosial Media',
                 'is_double' => false,
@@ -735,8 +776,366 @@ class ProductController extends Controller
                     ['name' => '400 Komentar Indo', 'price' => 'Rp 200.000'],
                     ['name' => '500 Komentar Indo', 'price' => 'Rp 250.000'],
                 ]
-            ]
+            ],
+            [
+                'id' => 35,
+                'name' => 'Disney+ Premium',
+                'category' => 'Streaming',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/disney.jpg'),
+                'variants' => [
+                    ['name' => '1 Hari Share 6 User', 'price' => 'Rp 5.000'],
+                    ['name' => '3 Hari Share 6 User', 'price' => 'Rp 10.000'],
+                    ['name' => '5 Hari Share 6 User', 'price' => 'Rp 10.000'],
+                    ['name' => '7 Hari Share 6 User', 'price' => 'Rp 17.000'],
+                    ['name' => '1 Bulan Share 6 User', 'price' => 'Rp 30.000'],
+                    ['name' => '1 Bulan Share 3 User', 'price' => 'Rp 52.000'],
+                    ['name' => '1 Bulan Private', 'price' => 'Rp 140.000'],
+                ]
+            ],
+            [
+                'id' => 38,
+                'name' => 'Youku Premium',
+                'category' => 'Streaming',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/youku.jpg'),
+                'variants' => [
+                    ['name' => '1 Bulan Sharing', 'price' => 'Rp 10.000'],
+                    ['name' => '2 Bulan Sharing', 'price' => 'Rp 15.000'],
+                    ['name' => '3 Bulan Sharing', 'price' => 'Rp 25.000'],
+                    ['name' => '1 Bulan Private', 'price' => 'Rp 28.000'],
+                ]
+            ],
+            [
+                'id' => 39,
+                'name' => 'Drakor ID Premium',
+                'category' => 'Streaming',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/drakorid.png'),
+                'variants' => [
+                    ['name' => '1 Bulan Sharing', 'price' => 'Rp 10.000'],
+                    ['name' => '1 Tahun Sharing', 'price' => 'Rp 25.000'],
+                    ['name' => '1 Bulan Private', 'price' => 'Rp 25.000'],
+                ]
+            ],
+            [
+                'id' => 40,
+                'name' => 'GagaOOLala Premium',
+                'category' => 'Streaming',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/gagaoolala.jpg'),
+                'variants' => [
+                    ['name' => '1 Bulan Sharing', 'price' => 'Rp 15.000'],
+                ]
+            ],
+            [
+                'id' => 41,
+                'name' => 'Picsart Pro',
+                'category' => 'Editor Apps',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/picsart.png'),
+                'variants' => [
+                    ['name' => '1 Bulan Sharing', 'price' => 'Rp 7.000'],
+                    ['name' => '1 Bulan Private', 'price' => 'Rp 12.000'],
+                ]
+            ],
+            [
+                'id' => 42,
+                'name' => 'Ibis Paint X',
+                'category' => 'Editor Apps',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/iblispaintx.png'),
+                'variants' => [
+                    ['name' => '1 Tahun Sharing', 'price' => 'Rp 30.000'],
+                ]
+            ],
+            [
+                'id' => 43,
+                'name' => 'DazzCam',
+                'category' => 'Editor Apps',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/dazzcam.png'),
+                'variants' => [
+                    ['name' => '1 Tahun Sharing', 'price' => 'Rp 16.000'],
+                ]
+            ],
+            [
+                'id' => 44,
+                'name' => 'Lightroom',
+                'category' => 'Editor Apps',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/lightroom.jpg'),
+                'variants' => [
+                    ['name' => '1 Tahun Sharing', 'price' => 'Rp 16.000'],
+                ]
+            ],
+            [
+                'id' => 45,
+                'name' => 'Wattpad',
+                'category' => 'Education Apps',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/wattpad.png'),
+                'variants' => [
+                    ['name' => '1 Bulan Sharing', 'price' => 'Rp 10.000'],
+                    ['name' => '3 Bulan Sharing', 'price' => 'Rp 20.000'],
+                    ['name' => '1 Tahun Sharing', 'price' => 'Rp 30.000'],
+                ]
+            ],
+            [
+                'id' => 46,
+                'name' => 'MS365',
+                'category' => 'Education Apps',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/ms365.png'),
+                'variants' => [
+                    ['name' => '1 Bulan Family Plan', 'price' => 'Rp 5.000'],
+                    ['name' => '1 Bulan Head', 'price' => 'Rp 20.000'],
+                ]
+            ],
+            [
+                'id' => 47,
+                'name' => 'GoodNotes',
+                'category' => 'Education Apps',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/goodnotes.png'),
+                'variants' => [
+                    ['name' => '1 Tahun Sharing', 'price' => 'Rp 32.000'],
+                ]
+            ],
+            [
+                'id' => 48,
+                'name' => 'Express VPN',
+                'category' => 'Education Apps',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/expressvpn.png'),
+                'variants' => [
+                    ['name' => '1 Bulan Sharing', 'price' => 'Rp 8.000'],
+                    ['name' => '1 Bulan Private', 'price' => 'Rp 15.000'],
+                ]
+            ],
+            [
+                'id' => 49,
+                'name' => 'Subs Telegram',
+                'category' => 'Sosial Media',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/telegram.png'),
+                'variants' => [
+                    ['name' => '100 Subs', 'price' => 'Rp 2.500'],
+                    ['name' => '200 Subs', 'price' => 'Rp 5.000'],
+                    ['name' => '300 Subs', 'price' => 'Rp 7.500'],
+                    ['name' => '400 Subs', 'price' => 'Rp 10.000'],
+                    ['name' => '500 Subs', 'price' => 'Rp 12.500'],
+                ]
+            ],
+            [
+                'id' => 50,
+                'name' => 'Member Saluran WhatsApp',
+                'category' => 'Sosial Media',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/whatsapp.png'),
+                'variants' => [
+                    ['name' => '100 Member', 'price' => 'Rp 5.000'],
+                    ['name' => '200 Member', 'price' => 'Rp 10.000'],
+                    ['name' => '300 Member', 'price' => 'Rp 15.000'],
+                    ['name' => '400 Member', 'price' => 'Rp 20.000'],
+                    ['name' => '500 Member', 'price' => 'Rp 25.000'],
+                ]
+            ],
+            [
+                'id' => 51,
+                'name' => 'Subscriber Youtube Web',
+                'category' => 'Sosial Media',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/youtube2.png'),
+                'variants' => [
+                    ['name' => '100 Subs', 'price' => 'Rp 7.000'],
+                    ['name' => '200 Subs', 'price' => 'Rp 14.000'],
+                    ['name' => '300 Subs', 'price' => 'Rp 21.000'],
+                    ['name' => '400 Subs', 'price' => 'Rp 28.000'],
+                    ['name' => '500 Subs', 'price' => 'Rp 35.000'],
+                ]
+            ],
+            [
+                'id' => 52,
+                'name' => 'Like Youtube Web',
+                'category' => 'Sosial Media',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/youtube2.png'),
+                'variants' => [
+                    ['name' => '100 Like', 'price' => 'Rp 5.000'],
+                    ['name' => '200 Like', 'price' => 'Rp 10.000'],
+                    ['name' => '300 Like', 'price' => 'Rp 15.000'],
+                    ['name' => '400 Like', 'price' => 'Rp 20.000'],
+                    ['name' => '500 Like', 'price' => 'Rp 25.000'],
+                ]
+            ],
+            [
+                'id' => 52,
+                'name' => 'View Youtube Web',
+                'category' => 'Sosial Media',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/youtube2.png'),
+                'variants' => [
+                    ['name' => '100 View', 'price' => 'Rp 5.000'],
+                    ['name' => '200 View', 'price' => 'Rp 10.000'],
+                    ['name' => '300 View', 'price' => 'Rp 15.000'],
+                    ['name' => '400 View', 'price' => 'Rp 20.000'],
+                    ['name' => '500 View', 'price' => 'Rp 25.000'],
+                ]
+            ],
+            [
+                'id' => 52,
+                'name' => 'Follower Shopee',
+                'category' => 'Sosial Media',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/shopee.png'),
+                'variants' => [
+                    ['name' => '100 Follower', 'price' => 'Rp 3.000'],
+                    ['name' => '200 Follower', 'price' => 'Rp 6.000'],
+                    ['name' => '300 Follower', 'price' => 'Rp 9.000'],
+                    ['name' => '400 Follower', 'price' => 'Rp 12.000'],
+                    ['name' => '500 Follower', 'price' => 'Rp 15.000'],
+                ]
+            ],
+            [
+                'id' => 52,
+                'name' => 'Like Shopee',
+                'category' => 'Sosial Media',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/shopee.png'),
+                'variants' => [
+                    ['name' => '100 Like', 'price' => 'Rp 1.000'],
+                    ['name' => '200 Like', 'price' => 'Rp 2.000'],
+                    ['name' => '300 Like', 'price' => 'Rp 3.000'],
+                    ['name' => '400 Like', 'price' => 'Rp 4.000'],
+                    ['name' => '500 Like', 'price' => 'Rp 5.000'],
+                ]
+            ],
+            [
+                'id' => 52,
+                'name' => 'View Video Shopee',
+                'category' => 'Sosial Media',
+                'is_double' => true,
+                'input_label' => 'Nama',
+                'input_label2' => 'Nomor Telepon',
+                'image' => asset('asset/img/products/shopee.png'),
+                'variants' => [
+                    ['name' => '100 View', 'price' => 'Rp 3.000'],
+                    ['name' => '200 View', 'price' => 'Rp 6.000'],
+                    ['name' => '300 View', 'price' => 'Rp 9.000'],
+                    ['name' => '400 View', 'price' => 'Rp 12.000'],
+                    ['name' => '500 View', 'price' => 'Rp 15.000'],
+                ]
+            ],
+            [
+                'id' => 53,
+                'name' => 'Starlight Card / Via Gift',
+                'category' => 'Mobile Legends',
+                'is_double' => true,
+                'input_label' => 'ID & Server',
+                'input_label2' => 'Nickname',
+                'image' => asset('asset/img/products/starlight.jpg'),
+                'variants' => [
+                    ['name' => 'SL Basic', 'price' => 'Rp 37.000'],
+                    ['name' => 'SL Premium', 'price' => 'Rp 90.000'],
+                ]
+            ],
+            [
+                'id' => 54,
+                'name' => 'Gift Skin / Via Pertemanan',
+                'category' => 'Mobile Legends',
+                'is_double' => true,
+                'input_label' => 'ID (Server)',
+                'input_label2' => 'Nickname',
+                'image' => asset('asset/img/products/skin.png'),
+                'variants' => [
+                    // GIFT SKIN
+                    ['name' => 'Normal Skin (269💎)', 'price' => 'Rp 35.000'],
+                    ['name' => 'Normal Skin (299💎)', 'price' => 'Rp 38.000'],
+                    ['name' => 'Elite Skin (399💎)', 'price' => 'Rp 50.000'],
+                    ['name' => 'Elite Skin (599💎)', 'price' => 'Rp 70.000'],
+                    ['name' => 'Special Skin (749💎)', 'price' => 'Rp 85.000'],
+                    ['name' => 'Epic Skin (899💎)', 'price' => 'Rp 110.000'],
+                    ['name' => 'Lightborn (1089💎)', 'price' => 'Rp 140.000'],
+                ]
+            ],
+            [
+                'id' => 55,
+                'name' => 'Gift Item / Via Pertemanan',
+                'category' => 'Mobile Legends',
+                'is_double' => true,
+                'input_label' => 'ID (Server)',
+                'input_label2' => 'Nickname',
+                'image' => asset('asset/img/products/item.png'),
+                'variants' => [
+
+                    // GIFT ITEM
+                    ['name' => 'Create Squad (199💎)', 'price' => 'Rp 30.000'],
+                    ['name' => 'Change Name (239💎)', 'price' => 'Rp 35.000'],
+                    ['name' => 'SQ Change Name (299💎)', 'price' => 'Rp 38.000'],
+                    ['name' => 'All Hero (599💎)', 'price' => 'Rp 70.000'],
+                    ['name' => 'Change Flag (1000💎)', 'price' => 'Rp 125.000']
+                ]
+            ],
+            [
+                'id' => 56,
+                'name' => 'Gift Charisma / Via Pertemanan',
+                'category' => 'Mobile Legends',
+                'is_double' => true,
+                'input_label' => 'ID (Server)',
+                'input_label2' => 'Nickname',
+                'image' => asset('asset/img/products/charisma.png'),
+                'variants' => [
+
+                    // CHARISMA
+                    ['name' => 'Charisma Item (20💎)', 'price' => 'Rp 2.500'],
+                    ['name' => 'Angel Ark (499💎)', 'price' => 'Rp 60.000'],
+                    ['name' => 'Gold Moon (999💎)', 'price' => 'Rp 130.000'],
+                ]
+            ],
+
+
+
         ];
+
 
         return view('index', compact('products'));
     }
