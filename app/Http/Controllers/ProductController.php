@@ -788,7 +788,7 @@ class ProductController extends Controller
                 'variants' => [
                     ['name' => '1 Hari Share 6 User', 'price' => 'Rp 5.000'],
                     ['name' => '3 Hari Share 6 User', 'price' => 'Rp 10.000'],
-                    ['name' => '5 Hari Share 6 User', 'price' => 'Rp 10.000'],
+                    ['name' => '5 Hari Share 6 User', 'price' => 'Rp 15.000'],
                     ['name' => '7 Hari Share 6 User', 'price' => 'Rp 17.000'],
                     ['name' => '1 Bulan Share 6 User', 'price' => 'Rp 30.000'],
                     ['name' => '1 Bulan Share 3 User', 'price' => 'Rp 52.000'],
